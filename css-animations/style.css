@@ -18,7 +18,28 @@ body {
   animation-duration: 1s;
   animation-delay: 500ms;
   animation-timing-function: ease-in-out;
-
+  animation-name: goingAround;
+  animation-fill-mode: forwards;
 
   background-color: #ff0000;
+}
+
+@keyframes goingAround {
+  /* the start of the animation */
+  0% { background-color: #ff0000;
+
+  }
+
+  50% {
+    left: 100%;
+
+    background-color: purple;
+  }
+
+
+  /* the ending point of the animation */
+  100% { background-color: black;
+
+  }
+
 }
