@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+section {
+  margin: 5em;
+  border: 2px dashed black;
+  
+  display: flex;
+  
+  flex-direction: column;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  flex-flow: row;
+
+  height: 700px;
+}
+
+article {
+  border: 5px solid pink;
+  padding: 3em;
+  
+ 
+}
+
+.article-1 {  
+  align-self: baseline;
+}
+
+.article-2 {
+  align-items: center;
+}
+
+.article-3 {
+  align-self: flex-end;
+}

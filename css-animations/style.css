@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  /* animation properties */
+  animation-duration: 1s;
+  animation-delay: 500ms;
+  animation-timing-function: ease-in-out;
+
+
+  background-color: #ff0000;
+}

@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10vh;
+}
+
+ul {
+  background-color: pink;
+  padding:15px;
+  font-style: white;
+}
+
+li {
+  display: inline-block; 
+}

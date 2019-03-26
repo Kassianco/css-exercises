@@ -1,0 +1,63 @@
+ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  border: 10px solid pink;
+}
+
+li {
+  width: 100px;
+  height: 100px;
+
+  position: relative;
+  
+  text-align: center;
+  line-height: 100px;
+
+  background-color: red;
+  color: white;
+}
+
+li:nth-child(even) {
+  position: relative;
+  top: -50px;
+  left: 50px;
+  
+  background-color: purple;
+}
+
+li:hover {
+  z-index: 1;
+  background-color: plum;
+}  
+  
+
+ header {
+   padding: 20px 0;
+   top: 0;
+   width: 100%;
+   
+   z-index: sticky;
+   position: fixed;
+   
+   text-align: center;
+   background-color: yellow;
+ }
+
+
+
+
+/* 
+li:first-child {
+  position: relative;
+  z-index: 1;
+
+  background-color: plum;
+} */

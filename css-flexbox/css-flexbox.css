@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  /* Remove the default list style */
+  padding: 0;
+  list-style: none;
+
+  min-height: 100px;
+  
+  /* the ul becomes a flex container
+  the list (it's direct descendants) become flex items */
+  display: flex; 
+
+  /* the  direction in which the flex items are distributed*/
+  flex-direction: row;
+  
+  /* should the items try to fit in one line or wrap */
+  flex-wrap: wrap;
+
+  /* these two proprerties can be joined in flex-flow shorthand */
+  flex-flow: row nowrap;
+
+  /* justify items along the main axis */
+  justify-content: flex-start;
+
+  align-items: center;
+
+  border: 1px solid red;
+
+}
+
+li {
+  padding: 5px 15px;
+  /* border: 1px solid black; */
+  margin: 0px 10px; 
+}
+  
+li:first-child {
+  font-size: 1.5em;
+  background-color: blue;
+
+  /* change the position of this flex item */
+  order: 2;
+
+  border: 20px solid grey;
+}
+
+li:nth-child(2) {
+  background-color: green;
+
+  order: 1;
+}
+
+/********************
+NAVIGATION
+********************/
+
+nav {
+  margin-top: 40px;
+
+  /* the links become flex items */
+  display: flex;
+  
+  border: 5px solid pink;
+}
+
+nav a.logo{
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+
+.nav-first a {
+  padding: 5px;
+ 
+ /* allow items to shrink */
+  flex-shrink: 1;
+  
+  /* allow items to grow */
+  flex-grow: 1;
+
+  /* if available try to use this amount of space */
+  flex-basis: 25%;
+  
+  border: 1px solid pink;
+}
+  
+
+.nav-second {
+  align-items: baseline;
+}
+
+.nav-second a { 
+  margin-left: 1em;
+  padding: 5px 10px;
+
+  border: 1px solid blue;
+}
+
+
+.nav-second a:first-child {
+  margin-left: 0;
+}
+
+.nav-second a:last-child {
+  /* aligns this items zcross the cross axis */
+  align-self: stretch;
+
+  margin-left: auto;
+
+  border: 0;
+  background-color: red;
+  color: white;
+}
+
+

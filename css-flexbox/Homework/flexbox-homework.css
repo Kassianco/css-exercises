@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box
+}
+
+section {
+  border: 1px dashed black;
+  margin: 5em;
+  display: flex;
+
+  align-items: center;
+
+}
+
+article {
+  border: 5px solid pink;
+  margin: 8em 5em;
+  padding: 3em ;
+}
