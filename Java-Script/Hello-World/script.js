@@ -1,0 +1,26 @@
+// single line comment
+
+/*
+multi-line
+comment
+*/
+
+// to log information to the console
+// we can use the console.log();
+
+console.log("hello world");
+
+// single line instruction - statement
+// has to end with a semicolon
+
+// variable
+var messageToTheWorld = "Hello world" ;
+var myName = "from Matteo";
+var space = " "
+
+var myMessage = messageToTheWorld + space + myName;
+
+// try to substitute the content of the h1 element
+
+var titleElement = document.getElementById("title");
+titleElement.innerHTML = myMessage;
