@@ -7,5 +7,3 @@ function selectElementChanged() {
   console.log(selectElement.value)
   document.body.style.backgroundColor = selectElement.value;
 };
-
-

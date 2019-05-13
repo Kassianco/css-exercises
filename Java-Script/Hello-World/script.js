@@ -67,3 +67,9 @@ function changeTextColor(){
 
   console.log('the function worked');
 };
+
+
+// quiz example 
+
+var questions = ["q1..", "q2"];
+var answer = ["a1", "a2"]
