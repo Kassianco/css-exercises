@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+ <!-- Is this really Summer?
+  (false)
+
+  Is it still raining?
+  (true)
+
+  Are we in February?
+  (false)-->
+
+  <section class="quiz">
+
+    <h1>Quiz of the year</h1>
+
+
+    <!-------------QUESTION 1--------------------->
+
+    <article class="question" id="question-1" data-answer="false">
+      <p>Is this really Summer?</p>
+      <p>
+        <input type="radio" name="q1" value="true" id="q1">
+        <label for="q1">Yes</label>
+        <input type="radio" name="q1" value="false">
+        <label for="q1">No</label>
+      </p>
+    </article>
+
+    
+   
+   <!-------------QUESTION 2--------------------->
+   
+    <article class="question" id="question-2" data-answer="true">
+      <p>Is it still raining?</p>
+      <p>
+        <input type="radio" name="q2" value="true" id="q2">
+        <label for="q2">Yes</label>
+        <input type="radio" name="q2" value="false">
+        <label for="q2">No</label>
+      </p>
+    </article>
+
+    
+
+    <!-------------QUESTION 3--------------------->
+    
+    <article class="question" id="question-3" data-answer="false">
+      <p>Are we in February?</p>
+      <p>
+        <input type="radio" name="q3" value="true" id="q3">
+        <label for="q3">Yes</label>
+        <input type="radio" name="q3" value="false">
+        <label for="q3">No</label>
+        </p>
+   </article>
+  
+   <button id="submit" onclick="submitQuiz()"> Submit your result</button>
+
+
+
+
+  </section>
+
+  <script>
+    var answer = [false, true, false];
+
+    function submitQuiz() {
+      //console.log(document.getElementById('question-1').dataset.answer);
+      console.log(document.getElementById('q1').value);
+      console.log(document.getElementById('q1').checked);
+      console.log(document.getElementById('q2').value);
+      console.log(document.getElementById('q2').checked);
+      console.log(document.getElementById('q3').value);
+      console.log(document.getElementById('q3').checked);
+
+    }
+  </script>
+
+
+
+
+</body>
+</html>
