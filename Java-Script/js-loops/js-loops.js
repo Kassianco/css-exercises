@@ -22,7 +22,9 @@ var nameInput = document.getElementById('myName');
 var messageBox = document.getElementById('messageBox');
 
 
+
 nameButton.addEventListener('click', sayMyName);
+clearButton.addEventListener('click', deleteName);
 
 function sayMyName() {
   
@@ -64,6 +66,12 @@ function updateTheMessage(messageText, messageSuccess) {
   }
 }
 
-updateTheMessage("Name uploaded", true, );
+updateTheMessage("Name uploaded", true );
   
+function removeFromList(){
+  var delete = document.getElementById('undo');
+  delete.removeChild.allTheNames;
 
+
+
+}
