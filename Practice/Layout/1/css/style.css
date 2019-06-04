@@ -351,6 +351,8 @@ article-4
   margin: 20px;
   border-radius: 5px;
 
+  max-width: 350px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -378,6 +380,8 @@ article-5
   margin: 20px;
   border-radius: 5px;
 
+  max-width: 350px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -401,7 +405,7 @@ article-5
   .other-projects {
     display: grid;
     grid-template-columns: repeat(2 1fr);
-    grid-template-rows: 1fr 3fr 1fr; 
+    grid-template-rows: 10% 90%; 
     grid-gap: 10px;
   }
 
