@@ -20,9 +20,12 @@ var allTheNames = [];
 var nameButton = document.getElementById('nameButton');
 var nameInput = document.getElementById('myName');
 var messageBox = document.getElementById('messageBox');
+var undo = document.getElementById('undo');
 
 
 nameButton.addEventListener('click', sayMyName);
+clearButton.addEventListener('click', deleteName);
+
 
 function sayMyName() {
   
@@ -64,6 +67,8 @@ function updateTheMessage(messageText, messageSuccess) {
   }
 }
 
-updateTheMessage("Name uploaded", true, );
+updateTheMessage("Name uploaded", true );
   
+function removeFromList(){
 
+}
