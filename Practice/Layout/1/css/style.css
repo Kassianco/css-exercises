@@ -403,7 +403,7 @@ article-2
 .article-2-img {
   margin: 10px 0;
 
-  width: 30vw;
+  width: 50vw;
   max-width: 200px;
 }
 
@@ -589,7 +589,19 @@ article-5
 
   
   .skills-list {
-   grid-gap: 10px;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;  
+  }
+
+  .skill-3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2; 
+  }
+
+  .skill-4 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2; 
   }
 
 
