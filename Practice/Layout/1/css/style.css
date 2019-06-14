@@ -9,10 +9,13 @@ body {
 
 :root {
   --text-color: white;
-  --text-weight: 300;
+  --text-weight: 200;
+  --text-size-desktop: 2em;
+  --text-size-smartphone:18px;
   --title-weight: 300;
-  --font-size: 2em;
-  --project-title: 25px;
+  --title-size-desktop: 2em;
+  --title-size-smartphone: 25px;
+  --project-title: 22px;
 }
 
 /**********
@@ -94,63 +97,32 @@ em {
   right: 15px;
 }
 
+/***************
+ABOUT ME
+**************/
 
-/***********
-INTRO
-***********/
-
-.intro-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 1fr;
-
-  height: 110vh;
-
-  background: #0cebeb;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #29ffc6, #20e3b2, #0cebeb);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #29ffc6, #20e3b2, #0cebeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-  color: var(--text-color);
-}
-
-.intro {
-  grid-column: 2 / 3;
+.about-me {
+  height: 80vh;
 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
-
-  text-align: center;
-  font-size: 2em;
-  font-weight: var(--text-weight);
-} 
-
-.my-button {
-  border: 0;
-  border-radius: 5px;
-  padding: 5px 20px;
-
-  background-color: transparent;
-
-  color: var(--text-color);
-
-  font-size: 20px;
-  font-weight: 600;
-
-  text-decoration: none;
-  font-weight: var(--text-weight);
-  
 }
 
-.my-button:hover {
-  background-color: #f05053;
-  color: white;
-
-  text-decoration: underline;
+.about-me-wrapper {
+  margin: 0 20px;
+  max-width: 500px;
 }
 
+.about-me-p {
+  font-size: var(--text-size-smartphone);
+  font-weight: var(--text-weight);
+}
 
+.img-me {
+  max-width: 250px;
+}
 
 
 /****************
@@ -177,21 +149,17 @@ SKILLS
 }
 
 .skills-title {
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
 
-  font-size: var(--font-size);
-  color: var(--text-color);
+  font-size: var(--title-size-smartphone);
   font-weight: var(--title-weight);
+  color: var(--text-color);
 }
 
 .skill-img {
   margin: 15px 0;
 
   max-height: 50px;
-}
-
-.skill-img-ux {
-  max-width: 90px;
 }
 
 .skills-list {
@@ -236,8 +204,6 @@ SKILLS
 
   color: var(--text-color);
 }
-
-
 
 
 /************
@@ -321,7 +287,7 @@ MAIN
   grid-row: 1 / 2;
 
   margin: 0;
-  padding: 50px;
+  padding: 30px;
 
   display: flex;
   justify-content: center;
@@ -329,7 +295,7 @@ MAIN
   
   color: var(--text-color);
   text-align: center;
-  font-size: var(--font-size);
+  font-size: 2em;
   font-weight: var(--title-weight);
 }
 
@@ -581,6 +547,32 @@ article-5
     max-height: 340px; 
   }
 
+  /***************
+ABOUT ME
+**************/
+
+.about-me {
+  height: 60vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+}
+
+.about-me-wrapper {
+  margin: 0 20px;
+  max-width: 500px;
+}
+
+.about-me-p {
+  font-size: var(--text-size-desktop);
+  font-weight: var(--text-weight);
+}
+
+.img-me {
+  border-radius: 10px;
+}
 
   /*********
   SKILLS
@@ -601,6 +593,10 @@ article-5
   .skill-4 {
     grid-column: 4 / 5;
     grid-row: 1 / 2; 
+  }
+
+  .skills-title {
+    font-size: var(--text-size-desktop);
   }
 
 
