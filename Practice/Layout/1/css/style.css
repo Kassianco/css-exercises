@@ -62,7 +62,7 @@ em {
   grid-column: 3 / 4;
   grid-row: 1 / 2; 
 
-  margin: 15px 20px;
+  margin: 25px 40px;
 
   display: flex;
   justify-content: flex-end;
@@ -75,14 +75,15 @@ em {
 }
 
 .main-nav-element:hover {
-  text-decoration: underline;
+  text-decoration: line-through ;
 }
 
 .link-to-page {
   text-decoration: none;
  
   color: var(--text-color);
-  font-weight: var(--text-weight);
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .main-nav-list {
@@ -121,7 +122,9 @@ ABOUT ME
 }
 
 .img-me {
-  max-width: 250px;
+  max-width: 200px;
+  border-radius: 10px;
+  
 }
 
 
@@ -322,7 +325,6 @@ article-1
   grid-row: 1 / 2;
 
   margin: 20px;
-  border-radius: 5px;
 
   max-width: 450px;
 
@@ -352,7 +354,6 @@ article-2
   grid-row: 2 / 3;
   
   margin: 20px;
-  border-radius: 5px;
 
   max-width: 450px;
 
@@ -381,7 +382,6 @@ article-3
   grid-row: 3 / 4;
 
   margin: 20px;
-  border-radius: 5px;
 
   max-width: 450px;
 
@@ -439,7 +439,6 @@ article-4
   grid-column: 2 / 3;
 
   margin: 10px;
-  border-radius: 5px;
 
   max-width: 350px;
 
@@ -467,7 +466,6 @@ article-5
   grid-column: 2 / 3;
 
   margin: 10px;
-  border-radius: 5px;
 
   max-width: 350px;
 
@@ -570,9 +568,6 @@ ABOUT ME
   font-weight: var(--text-weight);
 }
 
-.img-me {
-  border-radius: 10px;
-}
 
   /*********
   SKILLS
