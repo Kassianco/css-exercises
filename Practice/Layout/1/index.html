@@ -7,27 +7,36 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Layout 1</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
 </head>
 <body>
 
   <header class="header-wrapper"> 
-    <h1 class="my-name"><strong>HI</strong> my name is <em>Matteo Cordiner</em> and I am a Digital Designer.</h1>
+    <!-- <hs1 class="my-name"><strong>HI</strong> my name is <em>Matteo Cordiner</em> and I am a Digital Designer.</h1> -->
+    <div class="shape-position">  
+      <div class="shapes-wrapper">
+        <img id="blu--" class="shape" src="image/Shapes/blob-shape 5.svg" alt="blu">
+        <img id="celeste--" class="shape" src="image/Shapes/blob-shape 4.svg" alt="celeste">
+        <img id="blu-" class="shape" src="image/Shapes/blob-shape.svg" alt="blu">
+        <img id="celeste-" class="shape" src="image/Shapes/blob-shape 1.svg" alt="celeste">
+      </div>
+    </div>
+
     <nav class="main-navigation">
-      <ul class="main-nav-list">
-        <li class="main-nav-element"><a class="link-to-page" href="#">Intro</a></li>
-        <li class="main-nav-element"><a class="link-to-page" href="#main">Work</a></li>
-        <li class="main-nav-element"><a class="link-to-page" href="#">About</a></li>
+      <ul id="navSection" class="main-nav-list">
+        <li class="main-nav-element"><a class="link-to-page" href="#about-section">About</a></li>
+        <li class="main-nav-element"><a class="link-to-page" href="#work-page">Work</a></li>
       </ul>
       <a class="go-back-link" href="index.html"><img src="/image/icons/120823-solid-arrow-collection.png" alt="" height="35px"></a>
     </nav>
   </header>
 
-  <section class="about-me">
+  <section id="about-section" class="about-me">
     <div>
       <img id="imgMe" class="img-me" src="image/profile-img-blue.jpg" alt="img-me">
     </div>
     <div class="about-me-wrapper">
-      <p class="about-me-p">Hello! Welcome to my website, I am 22 years old, I like tech, computers and action films. Feel free to go around, and if you have question send me an email! </p>
+      <p class="about-me-p">Hello! Welcome, I am 22 years old, I like tech, computers and action films, this is my website, please feel free to go around, and if you have question send me an email! </p>
     </div>
   </section>
 
@@ -35,15 +44,15 @@
     <div class="skills-wrapper">
       <h2 class="skills-title">My skills</h2>
       <ul class="skills-list">
-        <li class="skill skill-1"><img class="skill-img" src="image/icons/skills/with text/uxui-icon.png" alt="ux-ui-logo"></li>
-        <li class="skill skill-2"><img class="skill-img" src="image/icons/skills/with text/html-icon.png" alt="html-icon"></li>
-        <li class="skill skill-3"><img class="skill-img" src="image/icons/skills/with text/css-icon.png" alt="css-icon"></li>
-        <li class="skill skill-4"><img class="skill-img" src="image/icons/skills/with text/javascript-icon.png" alt="javascript-icon"></li>
+        <li class="skill skill-1"><img src="https://img.icons8.com/nolan/96/000000/design.png" width="60px">UX/UI Design</li>
+        <li class="skill skill-2"><img src="https://img.icons8.com/color/96/000000/html.png" width="60px">HTML</li>
+        <li class="skill skill-3"><img src="https://img.icons8.com/color/96/000000/css.png" width="60px">CSS</li>
+        <li class="skill skill-4"><img src="https://img.icons8.com/nolan/96/000000/source-code.png" width="60px">JavaScript</li>
       </ul>
     </div>
   </section>
 
-  <main class="main background-page">
+  <main id="work-page" class="main background-page">
     <h2 class="project-title">These are my project</h2>
     <div class="main-wrapper">
       <article class="wrapper-item-1">
@@ -86,6 +95,11 @@
       <li class="footer-nav-element"><a href=""><img class="social-img" src="image/icons/linkedin_icon.png" alt="linkedin_icon"></a></li>
     </ul>
   </footer>
+
   
+  
+
+  <script src="script/script.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.main-nav-element {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-nav-element::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 5px;
+  width: 2px;
+  z-index: -1;
+  background: #374785;
+}
+
+.main-nav-element:hover::before {
+  width: 120px;
+}
