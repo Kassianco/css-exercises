@@ -14,8 +14,7 @@
 }
 
 p {
-  height: 20px;
-  width: 120px;
+  padding: 0 25px;
 
   text-align: center;
 
@@ -155,3 +154,62 @@ div {
  .hover-4:hover::before {
  width: -0%;
 }
+
+
+
+
+
+.hover-5 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  color: black;
+  background: white;
+  transition: 0.8s ease-in-out;
+
+}
+
+.hover-5:hover {
+  color: white;
+  background: blue;
+  box-shadow: 0px -4px 44px -10px blue;
+  transition: 0.8s ease-in-out;
+
+}
+
+
+
+
+
+.hover-6 {
+  position: relative;
+  overflow: hidden;
+
+  border: 2px solid blue;
+  cursor: pointer;
+  background: none;
+  color: blue;
+ }
+
+ .hover-6:hover {
+   color: white;
+   transition: 0.5s;
+  }
+   
+ .hover-6::before {
+  content: '';
+  position: absolute;
+  /* top: 0; */
+  bottom: 0;
+  height: 0%;
+  width: 120px;
+  background:blue;
+  z-index: -1;
+  transition: 0.8s;
+  border-radius:  50% 50% 0 0 ;
+ } 
+
+ 
+ .hover-6:hover::before {
+   height: 180%;
+ }
