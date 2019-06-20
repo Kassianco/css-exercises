@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>overlay-card</title>
+</head>
+<body>
+  
+  <div class="wrapper">
+    <div class="card-behind">
+     <button onclick="myFunction()" id="behindButton"><img  class="card-behind" src="First-page.png" alt="img"></button>
+    </div>
+
+    <div id="frontCard" class="card-infront">
+      <a href="">Code</a>
+      <a href="">Webpage</a>
+    </div>
+  </div>
+
+  <style>
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+    
+  .card-behind {
+    width: 200px;
+    height: 200px;
+  }
+
+
+  .card-infront {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 2px solid black;
+
+  }  
+
+
+  </style>
+
+  <script>
+    var myButton = document.getElementById('behindButton')
+    var frontCard = document.getElementById('frontCard')
+
+
+    function myFunction(myButton){ 
+    if (frontCard.style.display === "none") {
+      frontCard.style.display = "block";
+    } else {
+      frontCard.style.display = "none;"
+    }
+    
+    }
+  
+  </script>
+
+<!-- https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp -->
+
+
+</body>
+</html>
