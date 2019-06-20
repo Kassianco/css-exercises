@@ -10,8 +10,25 @@ TweenMax.from('#palmShape', 2,{ y: -500, opacity:0, ease: Bounce. easeOut})
 TweenMax.from('#globeShape', 2,{ y: -500, opacity:0, ease: Bounce. easeOut})
 
 
- 
+// var dotSelector1 = document.getElementById('dot1')
+// var dotSelector2 = document.getElementById('dot2')
+// var dotSelector3 = document.getElementById('dot3')
 
+// var dolphineCard = document.getElementById('dolphinContainer')
+// var palmCard = document.getElementById('palmContainer')
+// var planetCard = document.getElementById('climateContainer')
+
+// planetCard = hide
+// palmCard = hide
+
+// dotSelector1.addEventListener(click)
+
+// function changeImage() {
+  
+//   if (dotSelector1) {
+//     dolphineCard(show)
+//   }
+// }
 
 console.log('hello')
 

@@ -21,6 +21,14 @@ general
   box-shadow: -1px 15px 18px -6px rgba(120,120,120,0.47);
 }
 
+.container {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .text-wrapper {
   margin: 10px;
 
@@ -46,17 +54,24 @@ general
   color: black;
 }
 
+.selector-container {
+  display: block;
+  margin: auto;
+}
+
 .dot {/*
   list-style: none;*/
   display: inline-block;
 
   margin: 25px 15px;
+  border: 0;
 
   width: 25px;
   height: 25px;
 
   border-radius: 40px;
   background-color: #BEFCFE;
+  cursor: pointer;
 }
 
 .selected-dot {
