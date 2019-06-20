@@ -72,7 +72,7 @@ em {
 }
 
 .main-nav-element:hover {
-  text-decoration: underline;
+  text-decoration: line-through;
 }
 
 .link-to-page {
