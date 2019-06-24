@@ -224,6 +224,13 @@ SKILLS
   color: var(--text-color);
 }
 
+.skill-image {
+  margin-bottom: 15px;
+
+  height:70px;
+  fill: white;
+}
+
 
 /************
 FOOTER
@@ -618,10 +625,7 @@ ABOUT ME
 
   .skills-title {
     font-size: var(--text-size-desktop);
-  }
-
-  .skill-img {  
-    max-height: 65px;
+    margin-bottom: 55px;
   }
 
   .skill-3 {
@@ -633,9 +637,6 @@ ABOUT ME
     grid-column: 4 / 5;
     grid-row: 1 / 2; 
   }
-
-  
-
 
 
   /***************
