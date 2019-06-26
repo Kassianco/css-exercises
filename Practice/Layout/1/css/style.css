@@ -29,7 +29,7 @@ HEADER
 .header-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 2fr 1fr;
   grid-gap: 5px;
 
   height: 98vh;
@@ -47,6 +47,7 @@ HEADER
 
   font-size: 2em;
   text-align: start;
+  font-weight: 200;
 }
 
 #hi {
@@ -63,6 +64,7 @@ HEADER
 #digitalDesigner {
   font-size: 50px;
   font-family: Gameplay;
+  text-decoration: underline;
   /* color: #24E01B; */
 }
 
@@ -83,7 +85,7 @@ HEADER
 }
 
 .main-nav-element:hover {
-  text-decoration: line-through;
+  text-decoration:  underline;
 }
 
 .link-to-page {
@@ -366,21 +368,33 @@ article-1
   box-shadow: 2px 8px 13px -5px rgba(0,0,0,0.27);
 }
 
-.article-item-1::after {
+/* .article-1-h::before {
   content: '';
-  max-width: 450px;
+
   position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 381px;
+  width: 340px;
+
   background: white;
   opacity: 0.2;
-  height: 200px;
   z-index: 1;
-}
+} */
 
 .article-1-img {
   margin: 10px 0;
   
   width: 70vw;
   max-width: 350px;
+
+  transition: transform 0.8s ease-in-out;
+}
+
+.article-1-img:hover {
+  transform: scale(1.1);
+  transition: transform 0.8s ease-in-out;
 }
 
 /**********
@@ -409,6 +423,13 @@ article-2
 
   width: 50vw;
   max-width: 200px;
+
+  transition: transform 0.8s ease-in-out;
+}
+
+.article-2-img:hover {
+  transform: scale(1.1);
+  transition: transform 0.8s ease-in-out;
 }
 
 /**********
@@ -438,6 +459,13 @@ article-3
 
   width: 80vw;
   max-width: 350px;
+
+  transition: transform 0.8s ease-in-out;
+}
+
+.article-3-img:hover {
+  transform: scale(1.1);
+  transition: transform 0.8s ease-in-out;
 }
 
 /*************
@@ -492,6 +520,13 @@ article-4
 .article-4-img {
   width: 60vw;
   max-width: 250px;
+
+  transition: transform 0.8s ease-in-out;
+}
+
+.article-4-img:hover {
+  transform: scale(1.1);
+  transition: transform 0.8s ease-in-out;
 }
 
 /***********
@@ -521,8 +556,15 @@ article-5
 
   width: 70vw;
   max-width: 300px;
+
+  transition: transform 0.8s ease-in-out;
+
 }
 
+.article-5-img:hover {
+  transform: scale(1.1);
+  transition: transform 0.8s ease-in-out;
+}
 
 @media (min-width: 950px) {
   .main-wrapper {
@@ -540,19 +582,23 @@ article-5
 @media (min-width: 765px) {
 
   #hi {
-    font-size: 4em;
+    font-size: 2em;
     font-weight: 500;
   }
   
   #matteo {
-    font-size: 4em;
+    font-size: 70px;
     font-style: italic;
     font-weight: 300;
   }
 
   #digitalDesigner {
-    font-size: 4em;
+    font-size: 40px;
     font-family: Gameplay;
+  }
+
+  .my-name{
+    max-width: 740px;
   }
 
   .shapes-wrapper {
