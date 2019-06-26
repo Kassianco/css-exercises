@@ -707,6 +707,8 @@ article-5
     grid-row: 2 / 3;
 
     width: 350px;
+
+    justify-self: flex-end;
   }
 
   .wrapper-item-5 {
