@@ -52,3 +52,17 @@ svg {
   --mySize: 50;
   --myColor: blue;
 }
+
+.zombie svg circle {
+  transition: fill 500ms ease,
+              stroke 200ms ease;
+
+  animation: dash 2s linear forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}
