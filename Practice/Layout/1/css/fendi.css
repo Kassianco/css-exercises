@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+.header-container {
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row;
+
+  height: 90vh;
+}
+
+.h1-image {
+  width: 60vw;
+  max-width: 100em;
+}
+
+.header-h1 {
+  font-size: 140px;
+  margin: 0;
+  position: relative;
+}
+
+.header-h1::after {
+  content: '';
+  position: absolute;
+
+  bottom: 2px;
+  left: 0;
+
+  width: 80px;
+  height: 3px;
+  
+  color: red;
+}
+
+.go-home-btn {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+
+  border: none;  
+
+  background: none;
+  font-size: 16px;
+  font-weight: 600;
+}

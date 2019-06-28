@@ -57,9 +57,10 @@ svg {
   transition: fill 500ms ease,
               stroke 200ms ease;
 
-  animation: dash 2s linear forwards;
-  animation-iteration-count: infinite;
+  animation: dash 2s linear backwards;
+  animation-iteration-count: 3s;
 }
+
 
 @keyframes dash {
   to {

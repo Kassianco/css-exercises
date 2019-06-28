@@ -66,6 +66,34 @@ HEADER
   font-family: Gameplay;
   text-decoration: underline;
   /* color: #24E01B; */
+  animation: type-color 5s linear infinite;
+  animation-iteration-count: infinite;
+}
+
+@keyframes type-color {
+  0% { 
+    color: white;
+  } 
+
+  25% {
+    color: rgba(255, 93, 53, 1);
+  }
+
+  50% {
+    color: rgba(61, 70, 255, 1);
+  }
+
+  75% {
+    color: rgba(255, 240, 79, 1);
+  }
+
+  95% {
+    color: rgba(163, 255, 71, 1);
+  }
+
+  100% {
+    color: white;
+  }
 }
 
 .main-navigation {
@@ -576,9 +604,6 @@ article-5
   
 }
 
-
-
-
 @media (min-width: 765px) {
 
   #hi {
@@ -763,9 +788,4 @@ article-5
 
     width: 350px;
   }
-
-  .article-5-img {
-
-  }
-
 }
