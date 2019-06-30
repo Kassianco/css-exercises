@@ -66,7 +66,7 @@ HEADER
   font-family: Gameplay;
   text-decoration: underline;
   /* color: #24E01B; */
-  animation: type-color 5s linear infinite;
+  animation: type-color 10s linear infinite;
   animation-iteration-count: infinite;
 }
 
@@ -470,6 +470,7 @@ article-3
   margin: 20px;
 
   max-width: 450px;
+  max-height: 280px;
 
   display: flex;
   justify-content: center;

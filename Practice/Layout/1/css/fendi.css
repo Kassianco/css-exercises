@@ -2,39 +2,59 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-family: roboto, sans-serif;
+  --text-weight: 500;
+  --text-size: 18px;
+  --image-size: 300px;
+}
+
 .header-container {
-  margin-top: 50px;
+  margin-top: 80px;
 
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column;
 
-  height: 90vh;
+  height: 70vh;
 }
 
 .h1-image {
-  width: 60vw;
-  max-width: 100em;
+  margin-top: 50px;
+
+  width: var(--image-size);
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+
+  text-align: center;
 }
 
 .header-h1 {
-  font-size: 140px;
+  font-size: 100px;
   margin: 0;
+
   position: relative;
+  overflow: visible;
 }
 
 .header-h1::after {
-  content: '';
-  position: absolute;
+  content: "";
 
-  bottom: 2px;
+  position: absolute;
+  bottom: -5px;
   left: 0;
 
-  width: 80px;
-  height: 3px;
+  width: 250px;
+  height: 10px;
   
-  color: red;
+  background: #f8ce81ed;
+  z-index: 1;
 }
 
 .go-home-btn {
@@ -42,9 +62,71 @@
   top: 15px;
   left: 20px;
 
-  border: none;  
+  border: 2px solid rgb(46, 46, 46);
+  border-radius: 20px;
+  padding: 10px 15px;
 
   background: none;
   font-size: 16px;
   font-weight: 600;
+
+  text-decoration: none;
+  color: rgb(46, 46, 46);
 }
+
+.beginning-container {
+  margin-top: 10em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.beginning-h1 {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.beginning-img {
+  width: var(--image-size);
+}
+
+.selectors-container {
+
+  margin: 60px 0 0 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+
+  position: relative;
+}
+
+.selector-h {
+  font-weight: var(--text-weight);
+  font-size: var(--text-size);
+  text-align: center;
+}
+
+.selector-img {
+  margin-top: 20px;
+  
+  width: var(--image-size);
+}
+
+.selector-background {
+  position: absolute;
+
+  width: 100%;
+  height: 100px;
+
+  top: 50%;
+  left: 0;
+
+  background: #f8ce81ed;
+  z-index: -1;
+}
+
