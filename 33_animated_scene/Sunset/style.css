@@ -24,3 +24,20 @@
   transition: fill 10s ease-in-out;
 }
 
+
+.reply-btn {
+  position: absolute;
+  bottom: 240px;
+  left: 170px;
+
+  border: 2px solid rgb(228, 171, 66);
+  border-radius: 10px;
+  padding: 3px 15px;
+
+  background: none;
+
+  font-weight: 600;
+  font-size: 15px;
+  font-family: roboto, sans-serif;
+  cursor: pointer;
+}
