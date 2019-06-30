@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+/* body {
+  margin: 0;
+  min-height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+:root {
+  --apexColor1: rgb(208, 230, 10);
+  --apexColor2: rgb(226, 155, 23);
+  --apexColor3: rgb(216, 123, 1);
+  --waterApexColor: rgb(32, 32, 199);
+}
+
+.apex-color {
+  fill:var(--apexColor1);
+
+  transition: fill 10s ease-in-out;
+}
+
