@@ -10,7 +10,7 @@
 <body>
 
   
-  <button onclick="reply()" id="replyBtn" class="reply-btn">Reply</button>
+  <!-- <button onclick="reply()" id="replyBtn" class="reply-btn">Reply</button> -->
 
   <div class="scene">
       <svg x="0px" y="0px"
@@ -49,7 +49,7 @@
     <path id="water-line" class="st4" d="M390.13,127.66H51.06H390.13z"/>
     </svg>
 
-  </div>#f86882
+  </div>
 
 
   
@@ -66,12 +66,6 @@
    const background = document.getElementById('background')
    const nuvola1 = document.getElementById('nuvola1')
    const nuvola2 = document.getElementById('nuvola2')
-
-
-   function start() {
-     setTimeout(start, 0);
-   }
-
   
    mySunset();
 
@@ -96,9 +90,25 @@
     }
  
     
+   
+
    function reply() {
-     mySunset()
-     console.log('again')
+       tl
+        .from(outer, 10, {fill: '#D0E60A'})
+        .from(mid, 10, {delay: -10, fill: '#D0E60A'})
+        .from(inner, 10, {delay: -10, fill: '#D0E60A'})
+        // .to(horizon, 1, {delay: 2, scaleX: .00, fill: '#f86882' })
+        // .to(background, 5, {background:})
+        .to(nuvola1, 20, {delay: -10, x: 100})
+        .to(nuvola2, 20, {delay: -20, x: 50})
+        .to(moon ,10, {delay: -10 ,x: -250, y: -120,})
+        
+        TweenMax.to(outer, 15, {x: -250, y: 180})
+        TweenMax.to(mid, 15, {x: -250, y: 180})
+        TweenMax.to(inner, 15, {x: -250, y: 180})
+        TweenMax.to(horizon, 15, {fill: '#f86882'})
+        TweenMax.from(background, 10, {delay:6, fill: '#f18955' })
+
    }
 
   
