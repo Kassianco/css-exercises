@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  overflow: hidden;
+}
+
+#bgTopColorRed {
+ stop-color:rgb(228, 85, 19)
+}
