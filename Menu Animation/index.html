@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>svg</title>
+  <style>
+    svg {
+      border: 2px solid red;
+      background-image: linear-gradient(blue, #4444ff, purple, black);
+      background-size: 100% 300%;
+      background-position: 0 0;
+
+      animation-name: skyAnimation;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+    }
+      
+    @keyframes skyAnimation {
+      from {
+        background-position: 0 0;
+      }
+
+      to {
+        background-position: 0 100%;
+      }
+    }
+
+    #sun {
+      transform-origin: 0 100%;
+
+      animation-name: sunAnimation;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes sunAnimation {
+      0% {
+        transform: rotate(-.25turn);
+      }
+      
+      50%, 70% {
+        transform: rotate(0turn);
+      }    
+
+      100% {
+        transform: rotate(.25turn);
+      }
+    }
+
+    /* #cloud {
+      animation-name: cloudAnimation;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes cloudAnimation {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(300px);
+      }
+    } */
+  </style>
+</head>
+<body>
+  
+  <svg viewbox="0 0 500 300" fill="white" stroke="black">
+    <filter id="sunGlow">
+      <feGaussianBlur id="SourceGraphic" stdDeviation="4" />
+    </filter>
+    <defs>
+      <linearGradient  id="seaGradient" x1="0" x2="0" y1="1" y2="0" gradientTransform="rotate(50)">
+        <stop offset="0%" stop-color="#0000ff"/>
+        <stop offset="80%" stop-color="#5566ff"/>
+        <!-- <animate attributeName="y1" from="1" to="0" dur="1s" repeatCount="indefinite" /> -->
+        <!-- <animate attributeName="y2" from="0" to="1" dur="1s" repeatCount="indefinite" /> -->
+      </linearGradient>
+    </defs>
+    
+    <g id="sun">
+      <circle cx="250" cy="150" r="50" fill="yellow" stroke="none" filter="url(#sunGlow)" />
+      <circle cx="250" cy="150" r="50" fill="yellow" stroke="none"/>
+    </g>    
+
+    <g id="cloud" transform="translate(100 100)">
+      <circle r="20" stroke="none"/>
+      <circle cx="30" r="30" stroke="none" />
+      <circle cx="60" cy="10" r="15" stroke="none" />
+    </g>
+
+    <rect width="500" height="80" y="75%" fill="url(#seaGradient)" stroke="none" ></rect>
+  </svg>
+
+</body>
+</html>
