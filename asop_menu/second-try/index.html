@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Second try</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="wrapper">
+    <header>
+      <h1>Aesop</h1>
+      
+      <button id="backBtn" class="back-btn" onclick="back()"><img class="arrow-back" src="/arrow.png" alt="arrow"></button>
+    </header>
+    
+    <nav id="menuList" class="menu-list">
+      <li class="menu-item"> <button onclick="openSubmenu()">Shop</button>
+        <ul id="submenu" class="submenu">
+          <li class="submenu-item">Skin</li>
+          <li class="submenu-item">Hair</li>
+          <li class="submenu-item">Body</li>
+          <li class="submenu-item">Fragrance</li>
+          <li class="submenu-item">Home</li>
+          <li class="submenu-item">Kits & Travel</li>
+          <li class="submenu-item">Gifts</li>
+        </ul>
+      </li>
+      <li class="menu-item"> <button onclick="openSubmenu2()" >Read</button>
+      <ul id="submenu2" class="submenu2">
+        <li class="submenu-item">About</li>
+        <li class="submenu-item">Philosophy</li>
+        <li class="submenu-item">The Ledger</li>
+        <li class="submenu-item">The Fabulist</li>
+        <li class="submenu-item">Taxonomy of Design</li>
+      </ul>
+      </li>
+      <li class="menu-item">Visit</li>
+      <li class="menu-item">Search</li>
+    </nav>
+  </div>  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+ <script src="/TweenMax.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
