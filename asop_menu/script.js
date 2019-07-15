@@ -3,6 +3,7 @@ var shopList = document.getElementById('shopListRight')
 var readList = document.getElementById('readListRight')
 var searchSection = document.getElementById('searchSection')
 var backBtn = document.getElementById('backBtn')
+var arrowImg = document.getElementById('arrowImg')
 tl = new TimelineMax
 
 //open shop sub-menu
@@ -10,7 +11,8 @@ function openShop() {
   backBtn.style.setProperty('opacity', '1')
 
   TweenMax.to(mainList, .7, {x:-120, opacity:0})
-  TweenMax.to(shopList, .7, {x: -100,delay:.6, opacity: 1, ease: Expo.easeOut})
+  TweenMax.to(shopList, .7, {x: -100, delay:.6, opacity: 1, ease: Expo.easeOut})
+  TweenMax.staggerTo('.shop-list li', .7, {opacity: 1, x: -5, delay:1.6, ease: Expo.easeOut},0.08)
   TweenMax.to(backBtn, .7, {opacity: 1})
 }
 
@@ -25,6 +27,8 @@ function openRead() {
 //open search sub-menu
 function openSearch() {
   backBtn.style.setProperty('opacity', '1')
+  // backBtn.style.display = 'block';
+  // document.getElementById('arrowImg').style.display = 'block'
 
   TweenMax.to(mainList, .7, {x:-120, opacity:0})
   TweenMax.to(searchSection, 1, {x: -100,delay:.6, opacity: 1, ease: Expo.easeOut})

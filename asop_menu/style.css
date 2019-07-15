@@ -17,7 +17,7 @@ body {
 
 section {
   min-width: 450px;
-  min-height: 100vh;
+  min-height: 70vh;
 
   display: flex;
   justify-content: flex-start;
@@ -74,6 +74,11 @@ li {
   font-weight: var(--textweight);
   color: var(--textcolor);
   font-family: var(--textfamily);
+}
+
+.shop-list li {
+  opacity: 0;
+  transform: translateX(50);
 }
 
 .read-list {
@@ -148,4 +153,8 @@ button {
 
 .arrow-back {
   width: 10px;
+  /* position: absolute;
+  top: 38px; */
+  
+  /* display: none; */
 }
