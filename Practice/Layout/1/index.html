@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Portfolio | Matteo Cordiner</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animation.css">
 </head>
 <body>
 
@@ -15,8 +14,8 @@
     <h1 class="my-name"><span id="hi">HI</span> my name is <span id="matteo">Matteo Cordiner</span> I am a <span id="digitalDesigner">Web Designer</span>.</h1>
     <nav class="main-navigation">
       <ul id="navSection" class="main-nav-list">
-        <li class="main-nav-element"><a class="link-to-page" href="#about-section">About</a></li>
-        <li class="main-nav-element"><a class="link-to-page" href="#work-page">Work</a></li>
+        <li class="main-nav-element"><a class="link-to-page" href="/projects/about.html">About</a></li>
+        <li class="main-nav-element"><a class="link-to-page" href="#work">Work</a></li>
       </ul>
       <a class="go-back-link" href="index.html"><img src="/image/icons/120823-solid-arrow-collection.png" alt="" height="35px"></a>
     </nav>
@@ -41,7 +40,7 @@
     </div>
   </section>
 
-  <main class="main background-page">
+  <main id="work" class="main background-page">
     <h2 class="project-title">My projects</h2>
     <div class="main-wrapper">
       <article class="wrapper-item-1">
@@ -52,12 +51,12 @@
       <article class="wrapper-item-2">
         <h3 class="article-h">The Fork</h3>
         <!-- <p class="article-p">Creating a new application for the company The Fork, adding new features and improving the old ones.</p> -->
-        <a href="#"><img class="article-2-img" src="image/The Fork/Main_the_fork.png" alt="Main_the_fork"></a>
+        <a href="/projects/the-fork.html"><img class="article-2-img" src="image/The Fork/Main_the_fork.png" alt="Main_the_fork"></a>
       </article>
       <article class="wrapper-item-3">
-        <h3 class="article-h">PinGo</h3>
+        <h3 class="article-h">PinGo | Travel planning Website</h3>
         <!-- <p class="article-p">A project of SEO Workshop, designing a SEO analisys and website for bussines of sharing veichle.</p> -->
-        <a href="#"><img class="article-3-img" src="image/PinGo/Homepage.png" alt="Homepage"></a>
+        <a href="http://pingo.altervista.org/"><img class="article-3-img" src="image/PinGo/Homepage.png" alt="Homepage"></a>
       </article>
     </div>  
     <section class="other-projects">
@@ -65,12 +64,12 @@
       <article class="wrapper-item-4">
         <h3 class="article-h">Svolta</h3>
         <!-- <p class="article-p">Svolta is my thesis project, a E-Free FLoating Bike Sharing for the city of Rome. </p> -->
-        <a href="#"><img class="article-4-img" src="image/Svolta/render 1.png" alt="render"></a>
+        <a onclick="workInProgress()" href="#"><img class="article-4-img" src="image/Svolta/render 1.png" alt="render"></a>
       </article> 
       <article class="wrapper-item-5">
         <h3 class="article-h">Videomaking</h3>
         <!-- <p class="article-p">Here you can find some videos that i made by myself, during my last two years in Rome. I worked as freelance videomaker for young singer.</p> -->
-        <a href="#"><img class="article-5-img" src="image/Videomaking/Splash_page.JPG" alt="Splash_page"></a>
+        <a onclick="workInProgress()" href="#"><img class="article-5-img" src="image/Videomaking/Splash_page.JPG" alt="Splash_page"></a>
       </article>
     </section>
   </main>
@@ -85,6 +84,9 @@
     </ul>
   </footer>
 
+
+  <script src="TweenMax.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
   <script src="script/script.js"></script>
 
 </body>

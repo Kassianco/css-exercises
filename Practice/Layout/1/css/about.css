@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Gameplay;
+  src: url(/font/Gameplay.ttf) format("truetype");
+
+  font-family: roboto;
+  src: url(/font/Roboto-Regular.ttf) format("truetype");
+}
+
+body {
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.home-button {
+  position: absolute;
+  top: 40px;
+  right: 45px;
+
+  font-size: 20px;
+  font-family: roboto;
+  font-weight: 300;
+}
+
+.home-button:hover {
+  text-decoration: underline;
+}
+
+.container {
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+
+  height: 100vh; 
+  width: 100%;
+
+  background: #A8D0E6;
+}
+
+.container h1 {
+  margin: 0 90px 0 0;
+
+  width: 500px;
+   
+  color: white;
+  font-size: 20px;
+  font-family: roboto;
+  font-weight: 400;
+}
+
+.container img {
+  width: 300px;
+
+  border-radius: 50%;
+}
+
+.container a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+
+  height: 50vh;
+  width: 100%;
+
+  font-family: roboto;
+  
+  background-color: #24305E;
+  color: white;
+}
+
+.email-p {
+  font-size: 15px;
+}
+
+.social-img {
+  max-width: 20px;
+}
+
+.email-link {
+  margin: 0 15px;
+  
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.footer-nav {  
+  padding: 0;
+  
+  list-style: none;
+}
+
+.footer-nav-element {
+  display: inline;
+
+  margin: 0 10px;
+}

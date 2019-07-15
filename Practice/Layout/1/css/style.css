@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Gameplay;
+  src: url(/font/Gameplay.ttf) format("truetype");
+
+  font-family: roboto;
+  src: url(/font/Roboto-Regular.ttf) format("truetype");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -48,6 +56,9 @@ HEADER
   font-size: 2em;
   text-align: start;
   font-weight: 200;
+
+  transform: translateX(50px);
+  opacity: 0;
 }
 
 #hi {
@@ -104,6 +115,9 @@ HEADER
 
   display: flex;
   justify-content: flex-end;
+
+  transform: translateY(-15px);
+  /* opacity: 0; */
 }
 
 .main-nav-element {
@@ -223,6 +237,7 @@ SKILLS
   padding: 0;
 
   display: grid;
+  align-items: baseline;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 5px;
