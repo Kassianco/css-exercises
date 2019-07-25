@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+
+  border-top: 8px solid #222;
+
+  min-width: 100%;
+}
+
+.container {
+  width: 100%;
+}
+
+header {
+  margin: 25px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.title {
+  margin: 5px 0;
+
+  color: #333;
+
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.btn-menu {
+  padding: 0;
+
+  position: fixed;
+  top: 15px;
+  right: 20px;
+
+  z-index: 99;
+}
+
+.menu {
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  color: white;
+  background: #222;
+
+  transform: translateX(100%);
+  transition: 1s;
+}
+
+.open-menu {
+  transform: translateX(0);
+  transition: 1s
+}
+
+
+.navigation-list {
+  padding: 0;
+
+  list-style:  none;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.list-item {
+  margin: 20px 0;
+}
+
+.social-list {
+  padding: 0;
+}
+
+.social-link {
+  margin: 0 12px;
+
+  display: inline;
+}
+
+aside {
+  display: flex;
+  justify-content: flex-end;
+
+  margin: 0 20px;
+}
+
+aside button {
+  margin: 0 0 0 10px;
+  padding: 5px 12px ;
+  border-radius: 5px;
+
+  display: inline;
+  align-self: center;
+  list-style: none;
+
+  background-color: rgb(192, 192, 192);
+}
+
+.selected {
+  color: white;
+  background-color: #222;
+}
+
+main {
+  margin: 20px;
+}
+
+
+/* --------------- GRID------------ */
+
+
+.grid-view {
+  padding: 0;
+
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: repeat(3, 1fr); */
+  grid-gap: 10px;
+
+  list-style: none;
+
+  font-family: sans-serif;
+
+}
+
+.grid-view li img {
+  width: 100%;
+}
+
+.grid-img{
+  border: 2px solid #999;
+
+  width: 100%;
+}
+
+.main-list h2 {
+  margin: 10px 0 0 0;
+
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+.main-list li p {
+  margin: 0 0 10px 0;
+
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+
+/* -------------------LIST-------------- */
+
+.main-list {
+  padding: 0;
+
+  display: list-item;
+  justify-content: center;
+  flex-flow: column;
+
+  list-style: none;
+}
+
+.main-list li {
+  margin: 0 0 20px;
+  border-bottom: 2px solid #999;
+}
+
+.main-list img {
+  width: 30%;
+  height: 30%;
+}
